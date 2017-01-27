@@ -16,7 +16,7 @@ $ go get github.com/danbovey/Chappy
 $ go install github.com/danbovey/Chappy
 ```
 
-❓ If you're new to Go, please read our step by step installation instructions for [Linux](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Linux), [Mac](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Mac) and [Windows](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Windows).
+❓ If you're new to Go, please read the step by step installation instructions for [Linux](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Linux), [Mac](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Mac) and [Windows](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Windows).
 
 ### Creating a project
 
@@ -61,18 +61,16 @@ $ chappy start
 
 Add a new Webhook to your GitHub repo, which can be found in Settings -> Webhooks -> Add webhook.
 
-- By default, the payload URL will be your server IP, port 9000 and then your project name. i.e. `123.456.0.1:9000/MyWebsite`.
+- By default, the payload URL will be your server IP, port 9000 and then your project name. i.e. `http://123.456.0.1:9000/MyWebsite`.
 - A content type of `application/json` is recommended but it can be any.
 - The secret should be the secret string you defined in `projects.json`.
 - The event you need to listen to is just the `push` event.
 
 ### Testing
 
-To test everything runs successfully, you can start Chappy in verbose mode to view the command output with `chappy start -verbose`.
+To test everything runs successfully, make a test commit or pull request to the main branch (`"Beep, Boop! - Testing Chappy 🤖"` will do just fine).
 
-Then you can make a test commit or pull request to the main branch (`"Beep, Boop! - Testing Chappy 🤖"` will do just fine).
-
-If the webhook finishes without errors and your script run correctly, then congrats 🎉! If there are errors, please read the [Troubleshooting page](https://github.com/danbovey/Chappy/wiki/Troubleshooting) or submit an issue. 🕷
+If the webhook finishes without errors and your script runs correctly, then congrats 🎉! If there are errors, please read the [Troubleshooting page](https://github.com/danbovey/Chappy/wiki/Troubleshooting) or submit an issue. 🕷
 
 ## License
 
