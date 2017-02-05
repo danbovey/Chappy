@@ -7,16 +7,27 @@ Define a project and deployment script to run and Chappy will listen for changes
 
 ## Quick Start Guide
 
+### Download
+
+| Operating System                                                                                 |
+|--------------------------------------------------------------------------------------------------|
+| [Linux x64](https://github.com/danbovey/Chappy/raw/master/build/chappy-linux-amd64)              |
+| [MaxOS (10.7 and above)](https://github.com/danbovey/Chappy/raw/master/build/chappy-macos-amd64) |
+| [Windows x64](https://github.com/danbovey/Chappy/raw/master/build/chappy-windows-amd64.exe)      |
+| [Windows x32](https://github.com/danbovey/Chappy/raw/master/build/chappy-windows-386.exe)        |
+
+There are more options for different types of operating system in the `build` folder.
+
 ### Installation
 
-To get started, you need the [Golang](http://golang.org/doc/install) environment set up to run the following:
+To get started, download the correct executable for your operating system, and move it to a directory in your `$PATH`. For example on Linux x64:
 
 ```bash
-$ go get github.com/danbovey/Chappy
-$ go install github.com/danbovey/Chappy
+$ mv chappy-linux-amd64 chappy
+$ sudo mv chappy /usr/bin/local/chappy
 ```
 
-❓ If you're new to Go, please read the step by step installation instructions for [Linux](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Linux), [Mac](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Mac) and [Windows](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Windows).
+❓ Questions? You can read the step by step installation instructions for [Linux](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Linux), [Mac](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Mac) and [Windows](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Windows).
 
 ### Creating a project
 
@@ -68,9 +79,19 @@ Add a new Webhook to your GitHub repo, which can be found in Settings -> Webhook
 
 ### Testing
 
+⏰ Coming Soon - Chappy will log to a file letting you know if anything's wrong - and listen for the GitHub `ping` event to skip having to make a test commit.
+
 To test everything runs successfully, make a test commit or pull request to the main branch (`"Beep, Boop! - Testing Chappy 🤖"` will do just fine).
 
 If the webhook finishes without errors and your script runs correctly, then congrats 🎉! If there are errors, please read the [Troubleshooting page](https://github.com/danbovey/Chappy/wiki/Troubleshooting) or submit an issue. 🕷
+
+### Running forever
+
+To run Chappy in the background, follow the step by step guide for:
+
+- [Linux](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Linux)
+- [Mac](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Mac)
+- [Windows](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Windows)
 
 ## License
 
