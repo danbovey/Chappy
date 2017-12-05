@@ -24,6 +24,7 @@ To get started, download the correct executable for your operating system, and m
 
 ```bash
 $ mv chappy-linux-amd64 chappy
+$ chmod +x chappy
 $ sudo mv chappy /usr/local/bin/chappy
 ```
 
