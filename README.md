@@ -24,7 +24,7 @@ To get started, download the correct executable for your operating system, and m
 
 ```bash
 $ mv chappy-linux-amd64 chappy
-$ sudo mv chappy /usr/bin/local/chappy
+$ sudo mv chappy /usr/local/bin/chappy
 ```
 
 ❓ Questions? You can read the step by step installation instructions for [Linux](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Linux), [Mac](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Mac) and [Windows](https://github.com/danbovey/Chappy/wiki/Installing-Chappy-on-Windows).
